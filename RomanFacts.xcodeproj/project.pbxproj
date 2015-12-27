@@ -508,6 +508,7 @@
 				4AACDE971C2FC87100547A9C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4AACDE981C2FC87100547A9C /* Build configuration list for PBXNativeTarget "RomanFactsTests" */ = {
 			isa = XCConfigurationList;
@@ -516,6 +517,7 @@
 				4AACDE9A1C2FC87100547A9C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4AACDE9B1C2FC87100547A9C /* Build configuration list for PBXNativeTarget "RomanFactsUITests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +526,7 @@
 				4AACDE9D1C2FC87100547A9C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
