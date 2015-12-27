@@ -15,6 +15,8 @@
 		4AACDE7B1C2FC87100547A9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AACDE791C2FC87100547A9C /* LaunchScreen.storyboard */; };
 		4AACDE861C2FC87100547A9C /* RomanFactsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AACDE851C2FC87100547A9C /* RomanFactsTests.m */; };
 		4AACDE911C2FC87100547A9C /* RomanFactsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AACDE901C2FC87100547A9C /* RomanFactsUITests.m */; };
+		4AACDEA01C2FCD3900547A9C /* FactBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AACDE9F1C2FCD3900547A9C /* FactBook.m */; settings = {ASSET_TAGS = (); }; };
+		4AACDEA31C2FCD8900547A9C /* ColorWheel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AACDEA21C2FCD8900547A9C /* ColorWheel.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		4AACDE8C1C2FC87100547A9C /* RomanFactsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RomanFactsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AACDE901C2FC87100547A9C /* RomanFactsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RomanFactsUITests.m; sourceTree = "<group>"; };
 		4AACDE921C2FC87100547A9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4AACDE9E1C2FCD3900547A9C /* FactBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FactBook.h; sourceTree = "<group>"; };
+		4AACDE9F1C2FCD3900547A9C /* FactBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FactBook.m; sourceTree = "<group>"; };
+		4AACDEA11C2FCD8900547A9C /* ColorWheel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorWheel.h; sourceTree = "<group>"; };
+		4AACDEA21C2FCD8900547A9C /* ColorWheel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorWheel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +111,10 @@
 				4AACDE6F1C2FC87100547A9C /* AppDelegate.m */,
 				4AACDE711C2FC87100547A9C /* ViewController.h */,
 				4AACDE721C2FC87100547A9C /* ViewController.m */,
+				4AACDE9E1C2FCD3900547A9C /* FactBook.h */,
+				4AACDE9F1C2FCD3900547A9C /* FactBook.m */,
+				4AACDEA11C2FCD8900547A9C /* ColorWheel.h */,
+				4AACDEA21C2FCD8900547A9C /* ColorWheel.m */,
 				4AACDE741C2FC87100547A9C /* Main.storyboard */,
 				4AACDE771C2FC87100547A9C /* Assets.xcassets */,
 				4AACDE791C2FC87100547A9C /* LaunchScreen.storyboard */,
@@ -272,7 +282,9 @@
 			files = (
 				4AACDE731C2FC87100547A9C /* ViewController.m in Sources */,
 				4AACDE701C2FC87100547A9C /* AppDelegate.m in Sources */,
+				4AACDEA01C2FCD3900547A9C /* FactBook.m in Sources */,
 				4AACDE6D1C2FC87100547A9C /* main.m in Sources */,
+				4AACDEA31C2FCD8900547A9C /* ColorWheel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
