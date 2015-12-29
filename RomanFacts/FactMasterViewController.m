@@ -6,13 +6,13 @@
 //  Copyright © 2015 Jacqueline Ali Cordoba. All rights reserved.
 //
 
-#import "FactMasterDetailViewController.h"
+#import "FactMasterViewController.h"
 
-@interface FactMasterDetailViewController ()
+@interface FactMasterViewController ()
 
 @end
 
-@implementation FactMasterDetailViewController
+@implementation FactMasterViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -33,5 +33,8 @@
     // Pass the selected object to the new view controller.
 }
 */
+- (IBAction)showFactCategory:(id)sender {
+    [self performSegueWithIdentifier:@"showFactCategory" sender:sender];
+}
 
 @end

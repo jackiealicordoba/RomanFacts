@@ -1,13 +1,13 @@
 //
-//  FactCategoriesMasterDetailViewController.h
+//  FactEncyclopedia.h
 //  RomanFacts
 //
 //  Created by Jacqueline Ali on 12/28/15.
 //  Copyright © 2015 Jacqueline Ali Cordoba. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
-@interface FactMasterDetailViewController : UIViewController
+@interface FactEncyclopedia : NSObject
 
 @end

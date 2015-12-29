@@ -6,9 +6,9 @@
 //  Copyright © 2015 Jacqueline Ali Cordoba. All rights reserved.
 //
 
-#import "FactBook.h"
+#import "FactCategory.h"
 
-@implementation FactBook
+@implementation FactCategory
 
 - (instancetype)init
 {

@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface FactBook : NSObject
+@interface FactCategory : NSObject
 
 @property (nonatomic, strong) NSArray *facts;
 

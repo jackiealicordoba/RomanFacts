@@ -15,9 +15,10 @@
 		4AACDE7B1C2FC87100547A9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AACDE791C2FC87100547A9C /* LaunchScreen.storyboard */; };
 		4AACDE861C2FC87100547A9C /* RomanFactsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AACDE851C2FC87100547A9C /* RomanFactsTests.m */; };
 		4AACDE911C2FC87100547A9C /* RomanFactsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AACDE901C2FC87100547A9C /* RomanFactsUITests.m */; };
-		4AACDEA01C2FCD3900547A9C /* FactBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AACDE9F1C2FCD3900547A9C /* FactBook.m */; settings = {ASSET_TAGS = (); }; };
+		4AACDEA01C2FCD3900547A9C /* FactCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AACDE9F1C2FCD3900547A9C /* FactCategory.m */; settings = {ASSET_TAGS = (); }; };
 		4AACDEA31C2FCD8900547A9C /* ColorWheel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AACDEA21C2FCD8900547A9C /* ColorWheel.m */; settings = {ASSET_TAGS = (); }; };
-		4AAF9DC21C3214AB00B57FA9 /* FactMasterDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AAF9DC11C3214AB00B57FA9 /* FactMasterDetailViewController.m */; settings = {ASSET_TAGS = (); }; };
+		4AAF9DC21C3214AB00B57FA9 /* FactMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AAF9DC11C3214AB00B57FA9 /* FactMasterViewController.m */; settings = {ASSET_TAGS = (); }; };
+		4AAF9DC51C3232F500B57FA9 /* FactEncyclopedia.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AAF9DC41C3232F500B57FA9 /* FactEncyclopedia.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,12 +55,14 @@
 		4AACDE8C1C2FC87100547A9C /* RomanFactsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RomanFactsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AACDE901C2FC87100547A9C /* RomanFactsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RomanFactsUITests.m; sourceTree = "<group>"; };
 		4AACDE921C2FC87100547A9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4AACDE9E1C2FCD3900547A9C /* FactBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FactBook.h; sourceTree = "<group>"; };
-		4AACDE9F1C2FCD3900547A9C /* FactBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FactBook.m; sourceTree = "<group>"; };
+		4AACDE9E1C2FCD3900547A9C /* FactCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FactCategory.h; sourceTree = "<group>"; };
+		4AACDE9F1C2FCD3900547A9C /* FactCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FactCategory.m; sourceTree = "<group>"; };
 		4AACDEA11C2FCD8900547A9C /* ColorWheel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorWheel.h; sourceTree = "<group>"; };
 		4AACDEA21C2FCD8900547A9C /* ColorWheel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorWheel.m; sourceTree = "<group>"; };
-		4AAF9DC01C3214AB00B57FA9 /* FactMasterDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FactMasterDetailViewController.h; sourceTree = "<group>"; };
-		4AAF9DC11C3214AB00B57FA9 /* FactMasterDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FactMasterDetailViewController.m; sourceTree = "<group>"; };
+		4AAF9DC01C3214AB00B57FA9 /* FactMasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FactMasterViewController.h; sourceTree = "<group>"; };
+		4AAF9DC11C3214AB00B57FA9 /* FactMasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FactMasterViewController.m; sourceTree = "<group>"; };
+		4AAF9DC31C3232F500B57FA9 /* FactEncyclopedia.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FactEncyclopedia.h; sourceTree = "<group>"; };
+		4AAF9DC41C3232F500B57FA9 /* FactEncyclopedia.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FactEncyclopedia.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,10 +117,12 @@
 				4AACDE6F1C2FC87100547A9C /* AppDelegate.m */,
 				4AACDE711C2FC87100547A9C /* FactDetailViewController.h */,
 				4AACDE721C2FC87100547A9C /* FactDetailViewController.m */,
-				4AAF9DC01C3214AB00B57FA9 /* FactMasterDetailViewController.h */,
-				4AAF9DC11C3214AB00B57FA9 /* FactMasterDetailViewController.m */,
-				4AACDE9E1C2FCD3900547A9C /* FactBook.h */,
-				4AACDE9F1C2FCD3900547A9C /* FactBook.m */,
+				4AAF9DC01C3214AB00B57FA9 /* FactMasterViewController.h */,
+				4AAF9DC11C3214AB00B57FA9 /* FactMasterViewController.m */,
+				4AAF9DC31C3232F500B57FA9 /* FactEncyclopedia.h */,
+				4AAF9DC41C3232F500B57FA9 /* FactEncyclopedia.m */,
+				4AACDE9E1C2FCD3900547A9C /* FactCategory.h */,
+				4AACDE9F1C2FCD3900547A9C /* FactCategory.m */,
 				4AACDEA11C2FCD8900547A9C /* ColorWheel.h */,
 				4AACDEA21C2FCD8900547A9C /* ColorWheel.m */,
 				4AACDE741C2FC87100547A9C /* Main.storyboard */,
@@ -287,8 +292,9 @@
 			files = (
 				4AACDE731C2FC87100547A9C /* FactDetailViewController.m in Sources */,
 				4AACDE701C2FC87100547A9C /* AppDelegate.m in Sources */,
-				4AACDEA01C2FCD3900547A9C /* FactBook.m in Sources */,
-				4AAF9DC21C3214AB00B57FA9 /* FactMasterDetailViewController.m in Sources */,
+				4AACDEA01C2FCD3900547A9C /* FactCategory.m in Sources */,
+				4AAF9DC21C3214AB00B57FA9 /* FactMasterViewController.m in Sources */,
+				4AAF9DC51C3232F500B57FA9 /* FactEncyclopedia.m in Sources */,
 				4AACDE6D1C2FC87100547A9C /* main.m in Sources */,
 				4AACDEA31C2FCD8900547A9C /* ColorWheel.m in Sources */,
 			);

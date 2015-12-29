@@ -7,7 +7,7 @@
 //
 
 #import "FactDetailViewController.h"
-#import "FactBook.h"
+#import "FactCategory.h"
 #import "ColorWheel.h"
 
 @interface FactDetailViewController ()
@@ -19,14 +19,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    self.factBook = [[FactBook alloc] init];
+    self.factCategory = [[FactCategory alloc] init];
     self.colorWheel = [[ColorWheel alloc] init];
     
     UIColor *newColor = [self.colorWheel randomColor];
     self.view.backgroundColor = newColor;
     self.funFactButton.tintColor = newColor;
     
-    self.funFactLabel.text = [self.factBook.facts objectAtIndex:0];
+    self.funFactLabel.text = [self.factCategory.facts objectAtIndex:0];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -38,7 +38,7 @@
     UIColor *newColor = [self.colorWheel randomColor];
     self.view.backgroundColor = newColor;
     self.funFactButton.tintColor = newColor;
-    self.funFactLabel.text = [self.factBook randomFact];
+    self.funFactLabel.text = [self.factCategory randomFact];
 }
 
 @end

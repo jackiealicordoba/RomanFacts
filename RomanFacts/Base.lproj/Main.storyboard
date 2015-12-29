@@ -8,7 +8,7 @@
         <!--Categories-->
         <scene sceneID="xKG-L0-niv">
             <objects>
-                <viewController id="h6G-Pc-CbS" customClass="FactMasterDetailViewController" sceneMemberID="viewController">
+                <viewController id="h6G-Pc-CbS" customClass="FactMasterViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dyK-y6-hT1"/>
                         <viewControllerLayoutGuide type="bottom" id="c8l-ud-I1Z"/>
@@ -18,11 +18,40 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nOV-iu-obI">
-                                <rect key="frame" x="137" y="290" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <rect key="frame" x="20" y="207" width="280" height="50"/>
+                                <color key="backgroundColor" red="0.61807528410000001" green="0.01145911181" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="Mythology">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showFactCategory:" destination="h6G-Pc-CbS" eventType="touchUpInside" id="kYK-Uk-WCS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aXA-DS-0uF">
+                                <rect key="frame" x="20" y="311" width="280" height="50"/>
+                                <color key="backgroundColor" red="0.61807528410000001" green="0.01145911181" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="Roman Life">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showFactCategory:" destination="h6G-Pc-CbS" eventType="touchUpInside" id="EAm-W2-8ah"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rsi-oj-i1J">
+                                <rect key="frame" x="20" y="259" width="280" height="50"/>
+                                <color key="backgroundColor" red="0.61807528410000001" green="0.01145911181" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="Roman History">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showFactCategory:" destination="h6G-Pc-CbS" eventType="touchUpInside" id="jxC-KY-3iR"/>
+                                </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.99940814389999999" green="0.88092766119999999" blue="0.47849300090000002" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="Categories" id="sk9-Go-YDV"/>
                     <connections>
