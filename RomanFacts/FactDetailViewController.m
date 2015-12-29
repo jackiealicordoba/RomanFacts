@@ -6,15 +6,15 @@
 //  Copyright © 2015 Jacqueline Ali Cordoba. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "FactDetailViewController.h"
 #import "FactBook.h"
 #import "ColorWheel.h"
 
-@interface ViewController ()
+@interface FactDetailViewController ()
 
 @end
 
-@implementation ViewController
+@implementation FactDetailViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

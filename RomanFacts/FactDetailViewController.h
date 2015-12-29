@@ -11,7 +11,7 @@
 @class FactBook;
 @class ColorWheel;
 
-@interface ViewController : UIViewController
+@interface FactDetailViewController : UIViewController
 
 
 @property (weak, nonatomic) IBOutlet UILabel *funFactLabel;
