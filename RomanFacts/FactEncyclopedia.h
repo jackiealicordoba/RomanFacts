@@ -10,4 +10,6 @@
 
 @interface FactEncyclopedia : NSObject
 
+@property (nonatomic, strong) NSArray *factEncyclopedia;
+
 @end
