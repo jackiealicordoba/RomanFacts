@@ -19,16 +19,22 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-    self.factCategory = [[FactCategory alloc] init];
-    self.colorWheel = [[ColorWheel alloc] init];
     
-    UIColor *newColor = [self.colorWheel randomColor];
-    self.view.backgroundColor = newColor;
-    self.funFactButton.tintColor = newColor;
-    
-    // TODO update this
-    self.funFactLabel.text = [[self.factCategory.categoryData objectForKey:kFactList] objectAtIndex:0];
+    if (self.factCategory) {
+        // Do any additional setup after loading the view, typically from a nib.
+        self.colorWheel = [[ColorWheel alloc] init];
+        
+        // Set random color
+        UIColor *newColor = [self.colorWheel randomColor];
+        self.view.backgroundColor = newColor;
+        self.funFactButton.tintColor = newColor;
+        
+        // Generate new fun fact from category
+        self.funFactLabel.text = [self.factCategory randomFact];
+        
+        // Update Navigation Bar Text
+        
+    }
 }
 
 - (void)didReceiveMemoryWarning {

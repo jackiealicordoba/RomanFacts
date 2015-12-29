@@ -7,6 +7,7 @@
 //
 
 #import "FactMasterViewController.h"
+#import "FactDetailViewController.h"
 #import "FactCategory.h"
 #import "FactEncyclopedia.h"
 
@@ -24,8 +25,9 @@
         FactCategory *currentCategory = [[FactCategory alloc] initWithIndex:index];
         
         UIButton *factCategoryButton = self.factCategoryButtons[index];
-    
-        factCategoryButton.titleLabel.text = [currentCategory.categoryData objectForKey:kCategoryTitle];
+        NSString *categoryTitle = [currentCategory.categoryData objectForKey:kCategoryTitle];
+        
+        [factCategoryButton setTitle:categoryTitle forState:UIControlStateNormal];
     }
 }
 
@@ -37,6 +39,13 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender; {
     // Here get the index of the sender, pass that into init for fact category
+    if ([self.factCategoryButtons containsObject:sender]) {
+        NSUInteger index = [self.factCategoryButtons indexOfObject:sender];
+        
+        FactDetailViewController *factDetailViewController = (FactDetailViewController *)segue.destinationViewController;
+        factDetailViewController.factCategory = [[FactCategory alloc] initWithIndex:index];
+        
+    }
 }
 
 - (IBAction)showFactCategory:(id)sender {
