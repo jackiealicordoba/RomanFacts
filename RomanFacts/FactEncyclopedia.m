@@ -23,7 +23,7 @@ NSString *const kFactList = @"factList";
                                             @"According to tradition, Rome was founded on April 21, 753 B.C.E.",
                                             @"Romulus, the first king of Rome, and his brother, Remus, were raised by a she-wolf.",
                                             @"In 285 C.E., Emperor Diocletian split the Roman Empire into two halves (Eastern and Western) because it was too big to govern.",
-                                            @"Julius Caesar was assassinated on the Ides of March, 44 B.C.E."
+                                            @"Julius Caesar was assassinated on the Ides of March, 44 B.C.E.",
                                             @"The Roman Republic was founded in 509 B.C.E. and ended when Augustus became emperor in 27 B.C.E.",
                                             @"Construction of the Colosseum began in 72 C.E. under the rule of Vespasian",
                                             @"A gladiator named Spartacus led a major slave rebellion against the Roman military in 73 B.C.E.",
@@ -55,7 +55,7 @@ NSString *const kFactList = @"factList";
                                             @"Janus was the Roman god of doors, beginnings and endings and he was usually depicted with two faces.",
                                             @"Neptune was god of the sea and the patron god of horse racing, as he was the creator of the horse.",
                                             @"Mercury invented Apollo's harp to make up for stealing his cows as a baby.",
-                                            @"Vulcan made the first woman out of clay. He named her Pandora."
+                                            @"Vulcan made the first woman out of clay. He named her Pandora.",
                                             @"Bellona was the Ancient Roman goddess of war. She is frequently depicted with a helmet.",
                                             @"Pluto was the god of the Underworld and the wealth under the earth."]}];
     }
