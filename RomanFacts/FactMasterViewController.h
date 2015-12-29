@@ -10,4 +10,6 @@
 
 @interface FactMasterViewController : UIViewController
 
+@property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *factCategoryButtons;
+
 @end

@@ -8,6 +8,7 @@
 
 #import "FactDetailViewController.h"
 #import "FactCategory.h"
+#import "FactEncyclopedia.h"
 #import "ColorWheel.h"
 
 @interface FactDetailViewController ()
@@ -26,7 +27,8 @@
     self.view.backgroundColor = newColor;
     self.funFactButton.tintColor = newColor;
     
-    self.funFactLabel.text = [self.factCategory.facts objectAtIndex:0];
+    // TODO update this
+    self.funFactLabel.text = [[self.factCategory.categoryData objectForKey:kFactList] objectAtIndex:0];
 }
 
 - (void)didReceiveMemoryWarning {

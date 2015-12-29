@@ -55,6 +55,9 @@
                     </view>
                     <navigationItem key="navigationItem" title="Categories" id="sk9-Go-YDV"/>
                     <connections>
+                        <outletCollection property="factCategoryButtons" destination="nOV-iu-obI" id="dgn-XX-LWY"/>
+                        <outletCollection property="factCategoryButtons" destination="Rsi-oj-i1J" id="B3e-Za-afg"/>
+                        <outletCollection property="factCategoryButtons" destination="aXA-DS-0uF" id="6ar-nv-XsE"/>
                         <segue destination="BYZ-38-t0r" kind="push" identifier="showFactCategory" id="YwI-2R-5D3"/>
                     </connections>
                 </viewController>

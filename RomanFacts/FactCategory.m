@@ -7,21 +7,27 @@
 //
 
 #import "FactCategory.h"
+#import "FactEncyclopedia.h"
+
+@class FactEncyclopedia;
 
 @implementation FactCategory
 
-- (instancetype)init
+- (instancetype)initWithIndex:(NSUInteger)index;
 {
     self = [super init];
     if (self) {
-        _facts = [[NSArray alloc] initWithObjects:@"", nil];
+        FactEncyclopedia *encyclopedia = [[FactEncyclopedia alloc] init];
+        
+        _categoryData = [encyclopedia.factEncyclopedia objectAtIndex:index];
     }
     return self;
 }
 
 - (NSString *)randomFact {
-    int random = arc4random_uniform((int)self.facts.count);
-    return [self.facts objectAtIndex:random];
+    NSArray *factList = [self.categoryData objectForKey:kFactList];
+    int random = arc4random_uniform((int)factList.count);
+    return [factList objectAtIndex:random];
 }
 
 

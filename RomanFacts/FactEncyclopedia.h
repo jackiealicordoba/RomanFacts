@@ -8,6 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
+extern NSString *const kCategoryTitle;
+extern NSString *const kFactList;
+
 @interface FactEncyclopedia : NSObject
 
 @property (nonatomic, strong) NSArray *factEncyclopedia;

@@ -7,6 +7,8 @@
 //
 
 #import "FactMasterViewController.h"
+#import "FactCategory.h"
+#import "FactEncyclopedia.h"
 
 @interface FactMasterViewController ()
 
@@ -17,6 +19,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    for (NSUInteger index = 0; index < self.factCategoryButtons.count; index++) {
+        FactCategory *currentCategory = [[FactCategory alloc] initWithIndex:index];
+        
+        UIButton *factCategoryButton = self.factCategoryButtons[index];
+    
+        factCategoryButton.titleLabel.text = [currentCategory.categoryData objectForKey:kCategoryTitle];
+    }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -24,15 +34,11 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender; {
+    // Here get the index of the sender, pass that into init for fact category
 }
-*/
+
 - (IBAction)showFactCategory:(id)sender {
     [self performSegueWithIdentifier:@"showFactCategory" sender:sender];
 }
