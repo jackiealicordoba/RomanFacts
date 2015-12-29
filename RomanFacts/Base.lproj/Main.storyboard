@@ -1,14 +1,74 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="B2Q-Pi-dg6">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Categories-->
+        <scene sceneID="xKG-L0-niv">
+            <objects>
+                <viewController id="h6G-Pc-CbS" customClass="FactMasterViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dyK-y6-hT1"/>
+                        <viewControllerLayoutGuide type="bottom" id="c8l-ud-I1Z"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6fa-7C-hiw">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nOV-iu-obI">
+                                <rect key="frame" x="20" y="207" width="280" height="50"/>
+                                <color key="backgroundColor" red="0.61807528410000001" green="0.01145911181" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="Myth">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showFactCategory:" destination="h6G-Pc-CbS" eventType="touchUpInside" id="kYK-Uk-WCS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aXA-DS-0uF">
+                                <rect key="frame" x="20" y="311" width="280" height="50"/>
+                                <color key="backgroundColor" red="0.61807528410000001" green="0.01145911181" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="Life">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showFactCategory:" destination="h6G-Pc-CbS" eventType="touchUpInside" id="EAm-W2-8ah"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rsi-oj-i1J">
+                                <rect key="frame" x="20" y="259" width="280" height="50"/>
+                                <color key="backgroundColor" red="0.61807528410000001" green="0.01145911181" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="History">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showFactCategory:" destination="h6G-Pc-CbS" eventType="touchUpInside" id="jxC-KY-3iR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99940814389999999" green="0.88092766119999999" blue="0.47849300090000002" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Categories" id="sk9-Go-YDV"/>
+                    <connections>
+                        <outletCollection property="factCategoryButtons" destination="nOV-iu-obI" id="dgn-XX-LWY"/>
+                        <outletCollection property="factCategoryButtons" destination="Rsi-oj-i1J" id="B3e-Za-afg"/>
+                        <outletCollection property="factCategoryButtons" destination="aXA-DS-0uF" id="6ar-nv-XsE"/>
+                        <segue destination="BYZ-38-t0r" kind="push" identifier="showFactCategory" id="YwI-2R-5D3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yg4-4m-fms" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="435" y="332"/>
+        </scene>
+        <!--Set This By Category Name-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="FactDetailViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -35,7 +95,7 @@
                                 <color key="textColor" red="0.99940814389999999" green="0.88092766119999999" blue="0.47849300090000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Did you know?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0xJ-fx-1nJ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Did you know?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0xJ-fx-1nJ">
                                 <rect key="frame" x="52" y="60" width="116" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="116" id="9Hk-r8-dKB"/>
@@ -58,14 +118,34 @@
                             <constraint firstAttribute="trailingMargin" secondItem="Dwi-ht-P4U" secondAttribute="trailing" constant="27" id="vyi-5m-Pcv"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Set This By Category Name" id="KKF-gB-81o"/>
                     <connections>
                         <outlet property="funFactButton" destination="8uu-EA-KTv" id="qaF-xs-JnG"/>
                         <outlet property="funFactLabel" destination="Dwi-ht-P4U" id="zGk-6a-LJB"/>
+                        <outlet property="navBar" destination="KKF-gB-81o" id="2y2-xL-4Uf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="305" y="332"/>
+            <point key="canvasLocation" x="837" y="332"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Xz4-90-5fu">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="B2Q-Pi-dg6" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="mV3-oP-BBp">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="h6G-Pc-CbS" kind="relationship" relationship="rootViewController" id="gNR-WO-sCf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wnT-ay-SaD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="51" y="332"/>
         </scene>
     </scenes>
 </document>

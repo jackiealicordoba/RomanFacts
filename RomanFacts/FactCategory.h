@@ -8,11 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
-@interface FactBook : NSObject
+@interface FactCategory : NSObject
 
-@property (nonatomic, strong) NSArray *facts;
+@property (nonatomic, strong) NSDictionary *categoryData;
 
 - (NSString *)randomFact;
+- (instancetype)initWithIndex:(NSUInteger)index;
 
 @end
 
