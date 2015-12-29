@@ -1,27 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="L54-ej-Ra1">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="B2Q-Pi-dg6">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Navigation Controller-->
-        <scene sceneID="1bj-0k-OEA">
-            <objects>
-                <navigationController id="L54-ej-Ra1" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Lh4-yd-c8R">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="oAV-eZ-5XF" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-425" y="332"/>
-        </scene>
-        <!--Fact Categories Master Detail View Controller-->
+        <!--Categories-->
         <scene sceneID="xKG-L0-niv">
             <objects>
-                <viewController id="h6G-Pc-CbS" customClass="FactCategoriesMasterDetailViewController" sceneMemberID="viewController">
+                <viewController id="h6G-Pc-CbS" customClass="FactMasterDetailViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dyK-y6-hT1"/>
                         <viewControllerLayoutGuide type="bottom" id="c8l-ud-I1Z"/>
@@ -37,13 +24,16 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="sk9-Go-YDV"/>
+                    <navigationItem key="navigationItem" title="Categories" id="sk9-Go-YDV"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="push" identifier="showFactCategory" id="YwI-2R-5D3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yg4-4m-fms" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-44" y="332"/>
+            <point key="canvasLocation" x="435" y="332"/>
         </scene>
-        <!--Fact Detail View Controller-->
+        <!--Set This By Category Name-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="FactDetailViewController" sceneMemberID="viewController">
@@ -73,7 +63,7 @@
                                 <color key="textColor" red="0.99940814389999999" green="0.88092766119999999" blue="0.47849300090000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Did you know?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0xJ-fx-1nJ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Did you know?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0xJ-fx-1nJ">
                                 <rect key="frame" x="52" y="60" width="116" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="116" id="9Hk-r8-dKB"/>
@@ -96,6 +86,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="Dwi-ht-P4U" secondAttribute="trailing" constant="27" id="vyi-5m-Pcv"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Set This By Category Name" id="KKF-gB-81o"/>
                     <connections>
                         <outlet property="funFactButton" destination="8uu-EA-KTv" id="qaF-xs-JnG"/>
                         <outlet property="funFactLabel" destination="Dwi-ht-P4U" id="zGk-6a-LJB"/>
@@ -103,7 +94,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="305" y="332"/>
+            <point key="canvasLocation" x="837" y="332"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Xz4-90-5fu">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="B2Q-Pi-dg6" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="mV3-oP-BBp">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="h6G-Pc-CbS" kind="relationship" relationship="rootViewController" id="gNR-WO-sCf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wnT-ay-SaD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="51" y="332"/>
         </scene>
     </scenes>
 </document>

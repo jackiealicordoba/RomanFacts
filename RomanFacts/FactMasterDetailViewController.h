@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FactCategoriesMasterDetailViewController : UIViewController
+@interface FactMasterDetailViewController : UIViewController
 
 @end

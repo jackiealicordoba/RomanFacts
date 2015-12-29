@@ -6,13 +6,13 @@
 //  Copyright © 2015 Jacqueline Ali Cordoba. All rights reserved.
 //
 
-#import "FactCategoriesMasterDetailViewController.h"
+#import "FactMasterDetailViewController.h"
 
-@interface FactCategoriesMasterDetailViewController ()
+@interface FactMasterDetailViewController ()
 
 @end
 
-@implementation FactCategoriesMasterDetailViewController
+@implementation FactMasterDetailViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
