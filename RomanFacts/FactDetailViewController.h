@@ -18,6 +18,7 @@
 @property (nonatomic, strong) FactCategory *factCategory;
 @property (nonatomic, strong) ColorWheel *colorWheel;
 @property (weak, nonatomic) IBOutlet UIButton *funFactButton;
+@property (weak, nonatomic) IBOutlet UINavigationItem *navBar;
 
 @end
 

@@ -122,6 +122,7 @@
                     <connections>
                         <outlet property="funFactButton" destination="8uu-EA-KTv" id="qaF-xs-JnG"/>
                         <outlet property="funFactLabel" destination="Dwi-ht-P4U" id="zGk-6a-LJB"/>
+                        <outlet property="navBar" destination="KKF-gB-81o" id="2y2-xL-4Uf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

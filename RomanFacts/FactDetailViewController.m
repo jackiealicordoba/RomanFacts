@@ -33,7 +33,7 @@
         self.funFactLabel.text = [self.factCategory randomFact];
         
         // Update Navigation Bar Text
-        
+        self.navBar.title = [self.factCategory.categoryData objectForKey:kCategoryTitle];
     }
 }
 
